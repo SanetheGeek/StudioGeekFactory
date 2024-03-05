@@ -1,0 +1,125 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "poppins", sans-serif;
+
+}
+
+body {
+	background:#36364B;
+}
+
+header {
+	background: #000;
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+	height: 72px;
+	font-weight: 700;
+	padding: 15px;
+
+}
+
+.logo {
+	width: 256px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.note-container {
+	background-color: #11121B;
+	margin-top: 100px;
+	padding: 25px;
+	border-radius: 8px;
+	display: flex;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+
+}
+
+.notes {
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 6px 0;
+}
+
+.notes li {
+	padding: 6px;
+}
+
+.date {
+	padding: 6px;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.btn {
+	padding: 16px 12px;
+	border: 2px solid #fff;
+	background: none;
+	color: #fff;
+	cursor: pointer;
+	width: 256px;
+	height: auto;
+	margin-top: 50px;
+	transform: translate(45%);
+	margin: 45px;
+}
+
+.btn:hover {
+	background: #000;
+	transition: 0.3s;
+	border: 2px solid #FFC300;
+}
+
+@media screen and (max-width: 600px) {
+
+header {
+	background: #000;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	height: 72px;
+	font-weight: 700;
+	padding: 15px;
+
+}
+
+.logo {
+	width: 128px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.note-container {
+	background-color: #11121B;
+	padding: 12px;
+	border-radius: 6px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+
+}
+
+.date {
+	padding: 6px;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+
+}
