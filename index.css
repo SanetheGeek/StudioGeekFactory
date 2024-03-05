@@ -121,5 +121,18 @@ header {
 	font-weight: 500;
 }
 
+.btn {
+	padding: 16px 12px;
+	border: 2px solid #fff;
+	background: none;
+	color: #fff;
+	cursor: pointer;
+	width: 256px;
+	height: auto;
+	margin-top: 50px;
+	float: none;
+	margin: 0 auto;
+}
+
 
 }
