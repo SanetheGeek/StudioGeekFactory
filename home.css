@@ -357,8 +357,13 @@ header li a {
 
 }
 
-.text {
-	font-size: 12px ;
+#one {
+	font-size: 7px ;
 }
+
+.text h2 {
+	font-size: 10px;
+}
+
 
 }
