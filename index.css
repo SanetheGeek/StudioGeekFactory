@@ -129,8 +129,10 @@ header {
 	cursor: pointer;
 	width: 256px;
 	height: auto;
-	float: none;
-	margin: 0 auto;
+	display: flex;  
+	justify-content: center;  
+	align-items: center; 
+	transform: translate(-25px);
 	
 }
 
