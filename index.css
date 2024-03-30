@@ -93,15 +93,6 @@ header {
 
 }
 
-.logo {
-	width: 128px;
-	height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-}
-
 .note-container {
 	background-color: #11121B;
 	padding: 12px;
@@ -128,12 +119,12 @@ header {
 	color: #fff;
 	cursor: pointer;
 	width: 256px;
-	height: auto;
 	display: flex;  
 	justify-content: center;  
 	align-items: center; 
 	transform: translate(-25px);
 	
+
 }
 
 

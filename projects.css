@@ -92,6 +92,68 @@ header li a {
 	color: #fff;
 }
 
+.header-icons-status {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px;
+	height: 20px;
+	min-width: 20px;
+	background-color: orangered;
+	color: #000;
+	position: absolute;
+	top: 1px;
+	right: 23px;
+	z-index: 1;
+	border-radius: 8px;
+	font-size: 12px;
+}
+
+.store-header {
+	background-color: #FFC300;
+	padding: 25px; /* 1st Value is Top/Bottom, 2nd is Left/right */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+
+.header-icons a {
+	color: #000;
+}
+
+.store-header .header-icons {
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.header-icons {
+	padding: 0 auto;
+	vertical-align: middle;
+}
+
+.header-icons .bi-person-fill {
+	display: inline-block;
+	position: absolute;
+	left: 90%;
+	bottom: 10px;
+}
+
+.header-icons .bi-cart3 {
+	display: inline-block;
+	position: absolute;
+	left: 95%;
+	bottom: 10px;
+}
+
+.header-icons i:hover {
+	color: #fff;
+	transition: 0.3s;
+}
+
+
+
+
 .mobile-nav {
 	display: none;
 }
