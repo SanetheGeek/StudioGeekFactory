@@ -358,6 +358,30 @@ h3 {
 	display: none;
 }
 
+.blog-card {
+	background-color: #11121B;
+	margin: 20px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+	width: 360px;
+	height: auto;
+}
+
+.content h1 {
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	margin: 12px;
+}
+
+#two {
+	color: #fff;
+	margin: 12px 16px;
+	padding: 6px;
+	font-size: 10px;
+
+}
+
 .card-container {
 	display: flex;
 	position: relative;
