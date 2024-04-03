@@ -221,18 +221,18 @@ header li a {
 	grid-template-rows: repeat(3, minmax(250px, 1fr));
 	grid-gap: 5px;
 	flex-wrap: wrap;
+	width: 50%;
 
 }
 
 .gallery-wrapper img {
 	position: relative;
-	width: 128px;
-	height: 128px;
+	width: 64px;
+	height: 64px;
 	overflow: hidden;
 	object-fit: fill;
 }
-
-
+	
 #one, #two {
 	color: #fff;
 	text-align: center;
