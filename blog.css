@@ -135,6 +135,19 @@ header li a {
 	padding: 16px 45px;
 }
 
+.article .time {
+	color: #fff;
+	font-size: 11px;
+	margin-top: 12px;
+	padding-left: 45px;
+}
+
+.article .author {
+	color: #fff;
+	font-size: 11px;
+	vertical-align: baseline;
+}
+
 #one {
 	color: #fff;
 	font-size: 10px;
