@@ -99,7 +99,7 @@ header li a {
 }
 
 .article .article-wrapper {
-	width: 66.6%;
+	width: 75%;
 	margin: 45px;
 }
 
@@ -125,6 +125,20 @@ header li a {
 .navbar ul li {
 	display: none;
 	word-spacing: 10%;
+}
+
+.article h1 {
+	color: #fff;
+	font-weight: 700;
+	font-size: 20px;
+	margin-top: 50px;
+	padding: 16px 45px;
+}
+
+#one {
+	color: #fff;
+	font-size: 10px;
+
 }
 
 .hamburger {
