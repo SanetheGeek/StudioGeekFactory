@@ -9,8 +9,6 @@
 
 .logo {
 	width: 90px;
-	margin-left: auto;
-	margin-right: auto;
 	display: block;
 }
 
@@ -21,6 +19,9 @@ body {
 header {
 	background: #000;
 	font-weight: 900;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 header li a {
@@ -28,28 +29,30 @@ header li a {
 }
 
 .navbar {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px 0;
+	padding: 10px 50px 0 0;
 }
 
 .navbar ul {
 	list-style-type: none;
-	width: 100%;
-	text-align: center;
+	float: left;
+	
 }
 
 .navbar ul li {
 	display: inline-block;
-	word-spacing: 10%;
+	
 }
+
 
 .button-header {
 	background: #FFC300;
 	padding: 24px;
+	position: relative;
+	width: 100%;
+	top: 12%;
+	z-index: 1;
 
+	
 }
 
 .btn-previous, .btn-next {
@@ -79,12 +82,6 @@ header li a {
 	float: right;
 }
 
-.image-container {
-	background: #11121B;
-	padding: 30px 0;
-	
-}
-
 .strip {
 	position: relative;
 	width: 100%;
@@ -94,6 +91,7 @@ header li a {
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 15%;
 
 }
 
@@ -108,6 +106,31 @@ header li a {
 
 
 @media screen and (max-width: 600px) {
+
+	.logo {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.button-header {
+		background: #FFC300;
+		padding: 24px;
+		position: relative;
+		width: 100%;
+		z-index: 1;
+		
+	}
+
+	.strip img {
+		display: flex;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+
+	
+	}
 
 .navbar ul li {
 	display: none;
@@ -176,29 +199,6 @@ header li a {
 	color: #FFC300;
 
 }
-
-.image-container {
-	background: #11121B;
-	padding: 30px 0;
-	width: 100%;
-	
-}
-
-.strip {
-	position: relative;
-	width: 100%;
-}
-
-.strip img {
-	display: flex;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	overflow: hidden;
-
-}
-
-
 
 
 }

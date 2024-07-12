@@ -9,8 +9,6 @@
 
 .logo {
 	width: 90px;
-	margin-left: auto;
-	margin-right: auto;
 	display: block;
 }
 
@@ -21,6 +19,9 @@ body {
 header {
 	background: #000;
 	font-weight: 900;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 header li a {
@@ -28,23 +29,20 @@ header li a {
 }
 
 .navbar {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px 0;
+	padding: 10px 50px 0 0;
 }
 
 .navbar ul {
 	list-style-type: none;
-	width: 100%;
-	text-align: center;
+	float: left;
+	
 }
 
 .navbar ul li {
 	display: inline-block;
-	word-spacing: 10%;
+	
 }
+
 
 .episode-container {
 	display: flex;
@@ -81,6 +79,13 @@ header li a {
 
 
 @media screen and (max-width: 600px) {
+
+
+	.logo {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
 
 	.episode-card span {
 		font-size: 12px;
