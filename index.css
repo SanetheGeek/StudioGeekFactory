@@ -43,61 +43,6 @@ header li a {
 	
 }
 
-#slider {
-	overflow: hidden;
-	width: 100%;
-	object-fit: contain;
-	inset: 0;
-	object-position: center;
-	margin-top: 5%;
-
-}
-
-#slider figure {
-	position: relative;
-	width: 500%;
-	margin: 0;
-	left: 0;
-	animation: 20s slider infinite;
-}
-
-
-#slider figure img {
-	float: left;
-	width: 20%;
-	height: 100vh;
-}
-
-@keyframes slider {
-	0% {
-		left: 0;
-	}
-	20% {
-		left: 0;
-	}
-	25% {
-		left: -100%;
-	}
-	45% {
-		left: -100%;
-	}
-	50% {
-		left: -200%;
-	}
-	70% {
-		left: -200%;
-	}
-	75% {
-		left: -300%;
-	}
-	95% {
-		left: -300%;
-	}
-	100% {
-		left: 400%;
-	}
-}
-
 
 .news-container {
 	position: relative;
@@ -158,9 +103,12 @@ header li a {
 	}
 }
 
+
+/* Blog */ 
+
 .blog-container {
 	background: none;
-	margin-top: 50px;
+	margin-top: 200px;
 	display: grid;
     padding-bottom: 15px;
  	width: 100%;
@@ -208,6 +156,40 @@ header li a {
 	margin: 12px;
 }
 
+.factorynews-container {
+	background-color: #11121B;
+	border-radius: 12px;
+	border: 2px solid #FFC300;
+	width: 75%;
+	height: 360px;
+	margin-top: 15%;
+	padding: 40px;
+	overflow-y: scroll;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	
+}
+
+/* Vertical News Scroller */ 
+
+::-webkit-scrollbar-track {
+	background-color: hsl(242, 15%, 33%);
+	border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 100vw;
+}
+
+#three
+
+{
+	color: #fff;
+	overflow: hidden;
+
+}
+
 #two {
 	color: #fff;
 	margin: 12px 16px;
@@ -219,12 +201,63 @@ h3 {
 	font-size: 26px;
 	font-weight: 700;
 	line-height: 1;
-	margin-top: 50px;
+	margin-top: 250px;
 	text-align: center;
 	position: relative;
 	color: #fff;
 }
 
+/* Index Banner Animation */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+.banner .slider {
+
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 30%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg)
+    }
+    to {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg)
+    }
+}
+
+.banner .slider .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(550px);
+    }
+
+
+.banner .slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.factorynews-container::-webkit-scrollbar {
+	display: none;
+}
 
 .mobile-nav {
 	display: none;
@@ -233,6 +266,16 @@ h3 {
 .hamburger {
 	display: none;
 }
+
+@media (min-width: 600px) {
+
+.slider-wrapper {
+	display: none;
+}
+
+}
+
+
 
 @media screen and (max-width: 600px) {
 
@@ -246,6 +289,37 @@ h3 {
 .navbar ul li {
 	display: none;
 }
+
+.banner {
+	display: none;
+}
+
+.container {
+	padding: 2rem;
+}
+
+
+.slider-wrapper {
+	position:relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	border-radius: 0.5em;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
 
 .blog-card {
 	background-color: #11121B;
@@ -398,10 +472,6 @@ h3 {
 	padding: 12px 16px;
 	color: #FFC300;
 
-}
-
-#one {
-	font-size: 7px ;
 }
 
 .text h2 {

@@ -63,10 +63,10 @@ header li a {
 	border-radius: 12px;
 }
 
-img {
+.gallery1 img {
 
 	width: 100%;
-	height: 100%;
+	height: 360px;
 	align-items: center;
 	justify-content: center;
 	object-fit: fill;
@@ -84,9 +84,10 @@ img {
 
 
 
-.gallery1 img:hover {
+.gallery1:hover {
 	border: 2px solid #FFC300;
 }
+
 
 #one, #two {
  color: #fff;
@@ -124,18 +125,19 @@ img {
 	display: flex;
 	grid-template-columns: repeat(3, minmax(250px, 1fr));
 	grid-template-rows: repeat(3, minmax(250px, 1fr));
-	grid-gap: 5px;
+	grid-gap: 10px;
 	flex-wrap: wrap;
-	width: 50%;
+	width: 100%;
 
 }
 
 .gallery-wrapper img {
 	position: relative;
-	width: 64px;
-	height: 64px;
+	width: 128px;
+	height: 161px;
 	overflow: hidden;
 	object-fit: fill;
+	
 }
 
 

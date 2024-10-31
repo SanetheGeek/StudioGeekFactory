@@ -43,44 +43,73 @@ header li a {
 	
 }
 
-.card {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 100px;
-}
-
-.portrait {
-	width: 720px;
-	border-radius: 12px;
-	overflow-x: hidden;
-	margin: 20px;
-	background-color: #11121B;
-	box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.8);
-
-}
-
-.portrait img {
+.image-container{
 	width: 100%;
 	height: auto;
+	margin-top: 50px;
+	
+	
 }
 
-.content {
-	padding: 16px;
+.image-container img {
+	width: 480px;
+	height: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block; 
+	animation-name: slide-in;
+	
+
 }
 
-.content h1{
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		scale: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+h1 {
+	color: #FFC300;
+	font-size: 120px;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+	justify-content: center;
+	margin-top: 50px;
+	animation: linear;
+	animation-name: fade-in;
+	animation-duration: 3s;
+	animation-timeline: view();
+	animation-range: entry 0 cover 40%;
+	
+}
+
+.description {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	animation: linear;
+	animation-name: fade-in;
+	animation-duration: 3s;
+	animation-timeline: view();
+	animation-range: entry 0 cover 40%;
+
+}
+
+.description p {
 	color: #fff;
-	font-size: 20px;
-	margin-bottom: 10px;
-
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 10%;
 }
 
-.content p {
-	color: #fff;
-	font-size: 16px;
-	line-height: 1.3;
-}
 
 .mobile-nav {
 	display: none;
@@ -165,6 +194,71 @@ header li a {
 	display: none;
 	word-spacing: 10%;
 }
+
+.image-container{
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+	
+	
+}
+
+.image-container img {
+	width: 480px;
+	height: 620px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block; 
+	animation-name: slide-in;
+	
+
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		scale: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+h1 {
+	color: #FFC300;
+	font-size: 60px;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+	justify-content: center;
+	margin-top: 50px;
+	animation: linear;
+	animation-name: fade-in;
+	animation-duration: 3s;
+	animation-timeline: view();
+	animation-range: entry 0 cover 40%;
+	
+}
+
+.description {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	animation: linear;
+	animation-name: fade-in;
+	animation-duration: 3s;
+	animation-timeline: view();
+	animation-range: entry 0 cover 40%;
+
+}
+
+.description p {
+	font-size: 16px;
+}
+
 
 .hamburger {
 	display: block;
