@@ -123,13 +123,13 @@ header li a {
 	width: 100%;
 	padding: 20px 20px;
 	display: grid;
-	grid-template-columns: 180px 180px 180px ;
+	grid-template-columns: 128px 128px 128px;
 	grid-gap: 5px;
 }
 
 .gallery-wrapper .gallery1 img {
-	width: 180px;
-	height: 180px;
+	width: 128px;
+	height: 128px;
 	
 }
 
